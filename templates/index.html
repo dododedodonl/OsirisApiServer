@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Osiris Api Help</title>
+    <style>
+        table {
+            width:100%;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<h1>Osiris TU/e Unofficial API</h1>
+<h3>By kolibri solutions</h3>
+Welcome to the unofficial Osiris API, developed by Kolibri Solutions.<br/><br/>
+This API is in development and subject to change.<br/>
+All responses are in JSON format except for this help page, data is cached for 24 hours after fetching from Osiris<br/><br/>
+<h2>http GET</h2>
+The endpoints to use:<br/>
+<table>
+<thead>
+    <tr>
+        <th>Endpoint</th>
+        <th>Description</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>/</td>
+        <td>This help page</td>
+    </tr>
+    <tr>
+        <td>/api/types/</td>
+        <td>List of all supported types</td>
+    </tr>
+    <tr>
+        <td>/api/faculties/</td>
+        <td>List of all supported faculties</td>
+    </tr>
+    <tr>
+        <td>/api/course/&lt;coursecode&gt;/</td>
+        <td>List of dictionaries with all information for given course, for now only search by coursecode is supported. If a course has multiple timeslots or quartiles multiple entries will be returned.</td>
+    </tr>
+    <tr>
+        <td>/api/faculty/courses/&lt;facultycode&gt;/&lt;typecode&gt;/</td>
+        <td>List of codes of all courses given by specified faculty with specified type. For a list of available types and faculties see above endpoints.</td>
+    </tr>
+    <tr>
+        <td>/api/faculty/courses/&lt;facultycode&gt;/level/&lt;level&gt;/</td>
+        <td>List of codes of all courses of given level. No type is given because levels are only specified for Bachelor College courses. Level goes from 1-3</td>
+    </tr>
+</tbody>
+</table>
+</body>
+</html>

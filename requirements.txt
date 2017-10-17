@@ -1,0 +1,6 @@
+flask
+flask-cache
+redis
+beautifulsoup4
+requests
+lxml
